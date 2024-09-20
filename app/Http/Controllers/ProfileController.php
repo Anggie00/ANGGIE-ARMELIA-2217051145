@@ -8,11 +8,11 @@ class ProfileController extends Controller
 {
     public function profile($nama = "", $kelas = "", $npm = "")
 { 
-    $data = [
-        'nama' => 'Anggie Armelia', 
-        'kelas' => 'D', 
-        'npm' => '2217051145' 
-    ];
+    $data = [ 
+        'nama' => $request->input('nama'), 
+        'kelas' => $request->input('kelas'), 
+        'npm' => $request->input('npm'), 
+        ]; 
 return view('profile', $data); 
 }
 
