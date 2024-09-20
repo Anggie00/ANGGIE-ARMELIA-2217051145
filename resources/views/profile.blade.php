@@ -11,18 +11,20 @@
     <div class="bg-white rounded-lg shadow-lg p-6 max-w-md text-center w-full">
 
         <div class="w-32 h-32 mx-auto mb-4 relative">
-        <img id="anggie" class="rounded-full border border-gray-300 object-cover w-full h-full" src="images/anggie2.jpg">
-
+        <img id="anggie" class="rounded-full border border-gray-300 object-cover w-full h-full" src="{{ asset('images/nn.jpg') }}" alt="Foto Profil">
         </div>
         <div class="space-y-2">
             <div class="bg-pink-200 py-2 px-4 rounded-md text-black font-semibold">
-                Anggie Armelia
+            {{$nama}}
+
             </div>
             <div class="bg-pink-200 py-2 px-4 rounded-md text-black font-semibold">
-                Kelas D
+            {{$kelas}}
+
             </div>
             <div class="bg-pink-200 py-2 px-4 rounded-md text-black font-semibold">
-                2217051145
+            {{$npm}}
+
             </div>
         </div>
     </div>
